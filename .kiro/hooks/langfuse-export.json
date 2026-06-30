@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Langfuse session export",
+      "trigger": "Stop",
+      "description": "Exports the current Kiro session to Langfuse (one trace per turn) each time an agent turn finishes.",
+      "action": {
+        "type": "command",
+        "command": "npx -y kiro-langfuse-export"
+      }
+    }
+  ]
+}

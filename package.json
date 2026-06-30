@@ -1,0 +1,50 @@
+{
+  "name": "kiro-langfuse-export",
+  "version": "1.0.0",
+  "description": "Export Kiro IDE (kiro-agent) sessions to Langfuse, one trace per turn. Installs as a Kiro Stop hook.",
+  "type": "module",
+  "bin": {
+    "kiro-langfuse-export": "export-session.mjs"
+  },
+  "files": [
+    "export-session.mjs",
+    ".env.example",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "export": "node export-session.mjs",
+    "list": "node export-session.mjs --list"
+  },
+  "keywords": [
+    "kiro",
+    "kiro-agent",
+    "langfuse",
+    "observability",
+    "tracing",
+    "llm",
+    "agent",
+    "hook",
+    "export"
+  ],
+  "author": "jief123 (https://github.com/jief123)",
+  "license": "MIT",
+  "homepage": "https://github.com/jief123/kiro-langfuse-export#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jief123/kiro-langfuse-export.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jief123/kiro-langfuse-export/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "dotenv": "16.6.1",
+    "langfuse": "3.38.6"
+  }
+}
